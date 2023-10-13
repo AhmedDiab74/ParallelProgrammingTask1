@@ -35,8 +35,8 @@ void loginUser() {
 
     printf("Enter password: ");
     scanf("%s", password);
-
-    for (int i = 0; i < userCount; i++) {
+int i = 0;
+    for ( i;i < userCount; i++) {
         if (strcmp(users[i].username, username) == 0 && strcmp(users[i].password, password) == 0) {
             printf("User logged in successfully!\n");
             return;
